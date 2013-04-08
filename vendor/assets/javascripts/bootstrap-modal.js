@@ -110,7 +110,8 @@
         var that = this
         $(document).on('focusin.modal', function (e) {
           if (that.$element[0] !== e.target && !that.$element.has(e.target).length) {
-            that.$element.focus()
+            // Figart: commented out
+            // that.$element.focus()
           }
         })
       }
